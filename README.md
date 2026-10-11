@@ -20,6 +20,8 @@ A dark Tkinter app that does the same job as the script, without the terminal:
 CSV preview with search, Spotify login in the browser, the target account name shown before import,
 skipping songs that are already liked, a live progress bar and a retry for failed batches.
 
+![re:liked desktop app importing liked songs (demo mode)](docs/reliked.png)
+
 ```bash
 pip install -r requirements.txt
 python spotify_import_gui.py            # real import
@@ -141,6 +143,8 @@ Przydatne przy zmianie konta Spotify — automatycznie przenosi polubione utwory
 Ciemna aplikacja w Tkinter robi to samo co skrypt, ale bez terminala:
 podgląd CSV z wyszukiwarką, logowanie do Spotify w przeglądarce, nazwa konta docelowego przed importem,
 pomijanie już polubionych utworów, pasek postępu na żywo i ponawianie nieudanych paczek.
+
+![Aplikacja re:liked w trakcie importu polubionych utworów (tryb demo)](docs/reliked.png)
 
 ```bash
 pip install -r requirements.txt
