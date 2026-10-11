@@ -14,6 +14,27 @@ Useful when changing your Spotify account — automatically transfers your liked
 
 ---
 
+## Desktop app (re:liked)
+
+A dark Tkinter app that does the same job as the script, without the terminal:
+CSV preview with search, Spotify login in the browser, the target account name shown before import,
+skipping songs that are already liked, a live progress bar and a retry for failed batches.
+
+```bash
+pip install -r requirements.txt
+python spotify_import_gui.py            # real import
+python spotify_import_gui.py --demo     # walkthrough without login or account changes
+```
+
+Client ID and Client Secret can be entered in **Settings** (saved to `.env`).
+Dragging a CSV into the window works when `tkinterdnd2` is installed.
+
+> Since March 2026 Spotify apps in Development Mode save tracks through `PUT /me/library`;
+> both the scripts and the desktop app use it and fall back to `PUT /me/tracks`. In Development Mode the app owner
+> needs Premium and the new account must be added under **User Management** in the dashboard.
+
+---
+
 ## Step 1 — Export with Exportify
 
 Go to https://exportify.net/, log in with your old account and download **Liked Songs** as CSV.  
@@ -112,6 +133,27 @@ Przydatne przy zmianie konta Spotify — automatycznie przenosi polubione utwory
 1. Eksportujesz polubione utwory ze starego konta do CSV
 2. Uruchamiasz skrypt na nowym koncie
 3. Skrypt dodaje wszystkie utwory do polubionych
+
+---
+
+## Aplikacja okienkowa (re:liked)
+
+Ciemna aplikacja w Tkinter robi to samo co skrypt, ale bez terminala:
+podgląd CSV z wyszukiwarką, logowanie do Spotify w przeglądarce, nazwa konta docelowego przed importem,
+pomijanie już polubionych utworów, pasek postępu na żywo i ponawianie nieudanych paczek.
+
+```bash
+pip install -r requirements.txt
+python spotify_import_gui.py            # prawdziwy import
+python spotify_import_gui.py --demo     # pokaz bez logowania i bez zmian na koncie
+```
+
+Client ID i Client Secret można wpisać w **Ustawieniach** (zapisują się w `.env`).
+Przeciąganie pliku CSV do okna działa, gdy zainstalowany jest `tkinterdnd2`.
+
+> Od marca 2026 aplikacje Spotify w trybie Development zapisują utwory przez `PUT /me/library`;
+> korzystają z niego zarówno skrypty, jak i aplikacja okienkowa, a w razie potrzeby wracają do `PUT /me/tracks`. W trybie Development
+> właściciel aplikacji potrzebuje Premium, a nowe konto trzeba dodać w zakładce **User Management**.
 
 ---
 

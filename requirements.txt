@@ -1,0 +1,5 @@
+spotipy>=2.25
+python-dotenv>=1.0
+pandas>=2.0          # skrypty CLI
+pillow>=10.0         # grafika aplikacji okienkowej
+tkinterdnd2>=0.4     # opcjonalnie: przeciąganie pliku CSV do okna

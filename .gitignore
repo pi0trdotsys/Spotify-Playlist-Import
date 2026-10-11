@@ -2,3 +2,5 @@ Liked_Songs_old.csv
 .DS_Store
 .cache
 .csv
+.env
+__pycache__/
